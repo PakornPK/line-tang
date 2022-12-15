@@ -18,7 +18,7 @@ func (t *Template) Render(w io.Writer, name string, data interface{}, c echo.Con
 
 func Router(e *echo.Echo) {
 	t := &Template{
-		templates: template.Must(template.ParseGlob("src\\public\\views\\html\\*.html")),
+		templates: template.Must(template.ParseGlob("public/views/html/*.html")),
 	}
 	e.Renderer = t
 

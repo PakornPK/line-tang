@@ -11,7 +11,7 @@ var port string
 func LoadConfig() error {
 	viper.SetConfigName("app")
 	viper.SetConfigType("env")
-	viper.AddConfigPath("src")
+	viper.AddConfigPath(".")
 	err := viper.ReadInConfig()
 	if err != nil {
 		return err

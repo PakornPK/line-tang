@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  server: 
+    build: .
+    image: line-tang:0.0.1
+    container_name: line-tang-app
+    ports:
+      - 8080:55753
