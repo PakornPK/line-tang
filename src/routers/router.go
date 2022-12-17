@@ -21,6 +21,8 @@ func Router(e *echo.Echo) {
 		templates: template.Must(template.ParseGlob("public/views/html/*.html")),
 	}
 	e.Renderer = t
+	e.Static("/css", "public/views/css")
+	e.Static("/js", "public/views/js")
 
 	e.GET("/", controllers.HomePages)
 }
