@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Sriracha;
+    src: url(/assets/font/Sriracha/Sriracha-Regular.ttf);
+  }
+
+html, body { 
+    background-image: url("/assets/img/background.svg");
+    font-family: Sriracha;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button { 
+    width: 175px;
+    height: 50px;
+    margin: 5px;
+    border-color: transparent;
+    border-radius: 20px;
+    background-color: #e28743;
+    color: #f8f9fa;
+}

@@ -23,6 +23,7 @@ func Router(e *echo.Echo) {
 	e.Renderer = t
 	e.Static("/css", "public/views/css")
 	e.Static("/js", "public/views/js")
+	e.Static("/assets", "public/assets")
 
 	e.GET("/", controllers.HomePages)
 }
