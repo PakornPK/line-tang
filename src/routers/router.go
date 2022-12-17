@@ -47,4 +47,5 @@ func Router(e *echo.Echo) {
 	e.HTTPErrorHandler = customHTTPErrorHandler
 
 	e.GET("/", controllers.HomePages)
+	e.GET("/search", controllers.SearchPages)
 }
