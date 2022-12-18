@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/global.css" rel="stylesheet">
+    <title>ค้นหาลายแทง</title>
+</head>
+
+<body>
+    {{ index . "nav" }}
+    <div class="container h-100">
+        <div class="h-100 d-flex align-item-center justify-content-center flex-column">
+            <div class="text-center d-flex flex-column text-light" style="margin-top: 100px;">
+                <h1 class="h1 mt-5">ค้นหาลายแทง</h1>
+                <select id="typeSelect" class="form-select">
+                    <option selected disabled>เลือกสายของขุมทรัพย์</option>
+                    {{range $index, $element := .type}} <option value={{$index}}>{{$element}}</option> {{end}}
+                </select>
+            </div>
+            <div class="container mx-0 mt-5 overflow-auto bg-transparent" style="height: inherit;">
+                <div class="d-flex align-items-start justify-content-around flex-wrap my-5">
+                    <div class="card mb-5">
+                        <div class="card-body">
+                            This is some text within a card body.
+                        </div>
+                    </div>
+                    <div class="card mb-5">
+                        <div class="card-body">
+                            This is some text within a card body.
+                        </div>
+                    </div>
+                    <div class="card mb-5">
+                        <div class="card-body">
+                            This is some text within a card body.
+                        </div>
+                    </div>
+                    <div class="card mb-5">
+                        <div class="card-body">
+                            This is some text within a card body.
+                        </div>
+                    </div>
+                    <div class="card mb-5">
+                        <div class="card-body">
+                            This is some text within a card body.
+                        </div>
+                    </div>
+                    <div class="card mb-5">
+                        <div class="card-body">
+                            This is some text within a card body.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

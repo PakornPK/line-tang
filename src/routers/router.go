@@ -38,7 +38,7 @@ func customHTTPErrorHandler(err error, c echo.Context) {
 
 func Router(e *echo.Echo) {
 	t := &Template{
-		templates: template.Must(template.ParseGlob("public/views/html/*.html")),
+		templates: template.Must(template.ParseGlob("public/views/pages/*.html")),
 	}
 	e.Renderer = t
 	e.Static("/css", "public/views/css")
@@ -48,4 +48,5 @@ func Router(e *echo.Echo) {
 
 	e.GET("/", controllers.HomePages)
 	e.GET("/search", controllers.SearchPages)
+	e.GET("/create", controllers.CreatePages)
 }
